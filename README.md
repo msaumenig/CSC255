@@ -27,3 +27,9 @@ sequence of numbers, and view the results as a bar chart alongside the raw value
 
 - Python
 - pygame
+
+## Screenshots
+
+![alt text](mersenne-like.png)
+
+![alt text](xorshift.png)
