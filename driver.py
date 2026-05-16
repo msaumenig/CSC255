@@ -43,7 +43,7 @@ def pygame_gui():
         buttons[name] = pygame.Rect(x, 120, 110, 45)
         x += 120
 
-    gen_button = pygame.Rect(800, 120, 150, 45)
+    gen_button = pygame.Rect((W - 150) // 2, H - 60, 150, 45)
 
     def draw_hist(values):
         if not values:
@@ -54,7 +54,7 @@ def pygame_gui():
         bar_w = W // len(values)
 
         for i, v in enumerate(values):
-            h = int((v / max_v) * 150)
+            h = int((v / max_v) * 100)
             pygame.draw.rect(screen, (80, 120, 255),
                              (i * bar_w, base_y - h, bar_w - 2, h))
 
